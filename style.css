@@ -1,36 +1,35 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
 
-.header {
+.header-logo {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.header img {
+.header-logo img {
   width: 100%;
 }
 
-.header 
-.more_inf {
+.header-logo 
+.header-logo__img {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-.header { 
+.header-logo { 
   text-align: center;
-
 }
 
 }
 
-.centered-main-page-element {
+.centered-main-page-el {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -117,9 +116,6 @@ input#new-task {
   width: 318px;
 }
 
-p > button:hover {
-  color: #0FC57C;
-}
 
 /* Task list */
 li {
@@ -175,11 +171,11 @@ ul li input[type="text"] {
   display: none;
 }
 
-ul li.editMode input[type="text"] {
+ul li.edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
   display: none;
 }
