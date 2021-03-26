@@ -12,7 +12,7 @@
   text-align: right;
 }
 
-.header-logo img {
+.header-logo__img {
   width: 100%;
 }
 
@@ -45,14 +45,15 @@
   display: flex;
 }
 
-ul {
+.incomplete-tasks,
+.completed-tasks {
   margin: 0;
   padding: 0px;
 }
 
 li,
-h1,
-h3 {
+.to-do-title,
+.completed-title {
   list-style: none;
 }
 
@@ -76,8 +77,8 @@ button:hover {
 }
 
 /* Heading */
-h1,
-h3,
+.to-do-title,
+.completed-title,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
@@ -147,16 +148,16 @@ li >    input[type="text"] {
   width: 226px;
 }
 
-li > button.delete:hover {
+li > .btn-delete:hover {
   color: #CF2323;
 }
 
-button.delete img {
+.btn-delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.btn-delete img:hover {
   transform: rotateZ(0);
 }
 
